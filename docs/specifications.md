@@ -1,6 +1,8 @@
-https://github.com/IndaPlus25/msorberg-korlot-project
-Marcus Sörberg
-Filip Körlof
+# RPG Dungeon Crawler
+This project is a Dungeon Crawler where you go through multiple randomised floors killing enemies and looting weapons and equipment.
+We'll also try to add RPG elements like character and class selection, friendly/neutral characters and quests.
+
+Repo used: https://github.com/IndaPlus25/msorberg-korlot-project
 
 Vecka 13:
 
