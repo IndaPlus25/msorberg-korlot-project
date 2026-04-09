@@ -130,7 +130,7 @@ When team is done with their feature they will use pull requests to merge to mai
 
 The review of that pull request will be done by the other person. 
 
-As the issue will describe the feature good enough, team will be using the Git Rebase command to hide the commits regarding the issue.
+As the issue will describe the feature good enough, team will be using the Git Squash command to hide the commits regarding the issue.
 
 ## Unity
 This will cover how team will collaborate with Unity

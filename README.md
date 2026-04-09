@@ -7,3 +7,4 @@ Built by:
 
 ## Documentation
 * [Specification](docs/specs.md)
+* [Logs](docs/logs.md)
