@@ -5,15 +5,17 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public Vector2 lookVector = Vector2.down;
     private Rigidbody2D rb;
     private Vector2 moveVector;
     private Animator anim;
-    float desiredRotation = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        anim.SetFloat("Horizontal", lookVector.x);
+        anim.SetFloat("Vertical", lookVector.y);
     }
 
     // Update is called once per frame

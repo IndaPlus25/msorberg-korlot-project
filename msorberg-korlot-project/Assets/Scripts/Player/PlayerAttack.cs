@@ -22,7 +22,6 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("Can melee? " + canMelee);
         if (canMelee == true)
         {
             anim.SetTrigger("Attack");
