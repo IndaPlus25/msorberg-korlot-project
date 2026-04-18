@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveVector;
     private Animator anim;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
