@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -8,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
     public float meleeSpeed;
     public float damage;
     public bool canMelee = true;
+    List<GameObject> enemiesInMeleeRange = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,5 +36,32 @@ public class PlayerAttack : MonoBehaviour
         canMelee = false;
         yield return new WaitForSeconds(meleeSpeed);
         canMelee = true;
+    }
+
+    public void AttackEnemy()
+    {
+        foreach (GameObject enemy in enemiesInMeleeRange)
+        {
+            // Attack enemy
+            /*
+            enemyScript = enemy.GetComponent<Enemy>();
+            enemyScript.Hurt(damage);
+            */
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            enemiesInMeleeRange.Add(collision.gameObject);
+        }
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            enemiesInMeleeRange.Remove(collision.gameObject);
+        }
     }
 }
