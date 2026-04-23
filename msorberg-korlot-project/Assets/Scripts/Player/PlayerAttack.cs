@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
     public float meleeSpeed;
     public float damage;
     public bool canMelee = true;
-    List<GameObject> enemiesInMeleeRange = new List<GameObject>();
+    public List<GameObject> enemiesInMeleeRange = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,7 +38,7 @@ public class PlayerAttack : MonoBehaviour
         canMelee = true;
     }
 
-    public void AttackEnemy()
+    public void Hit()
     {
         foreach (GameObject enemy in enemiesInMeleeRange)
         {
@@ -47,6 +47,7 @@ public class PlayerAttack : MonoBehaviour
             enemyScript = enemy.GetComponent<Enemy>();
             enemyScript.Hurt(damage);
             */
+            Destroy(enemy);
         }
     }
 
