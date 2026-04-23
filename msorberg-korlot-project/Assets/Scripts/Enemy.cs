@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
     public float attackRange;
     public int damage;
     public GameObject player;
+
+    private Animator anim;
+    
     
     public void ChangeHp(int change)
     {   
@@ -33,6 +36,7 @@ public class Enemy : MonoBehaviour
     {
         rb.GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectsWithTag("Player")[0];
+        anim.GetComponent<Rigidbody2D>();
         
     }
 
