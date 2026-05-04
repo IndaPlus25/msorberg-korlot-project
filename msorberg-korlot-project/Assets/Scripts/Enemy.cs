@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public float attackRange;
     public int damage;
+    public string status;
     public GameObject player;
 
     private Animator anim;
@@ -51,9 +52,8 @@ public class Enemy : MonoBehaviour
             if (direction.magnitude > attackRange/2)
                 transform.position += direction.normalized * speed * Time.fixedDeltaTime;
 
-
-            
-            //Check proximity to Player
-        
+            //if (direction.magnitude < attackRange)
+                //check if hit
+                //player.GetComponent<Player>().Hurt(damage);
     }
 }

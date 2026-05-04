@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-guid: 97a60d33378c83e1885c5937e488a871
+guid: ae658b92252bde511a6d266f2fc46cf9
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: Goblin Left_Clip
-    second: {fileID: 7400000, guid: 64f2f52d9eb9093aab55634b32febaa6, type: 2}
+  externalObjects: {}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -41,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -107,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639125568455100340
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -144,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 10
       height: 16
-    spriteID: 3186ed27e347b83a1a3d6785f1b85c89
+    spriteID: 44a1eb547356c9927a69a452a17f6f7b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -165,7 +160,7 @@ ScriptedImporter:
       y: 28
       width: 10
       height: 16
-    spriteID: 4e6fad9156b5801eeb57f0f03fa962bb
+    spriteID: a97bf22053fd058c6b59cd9b07be299b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -186,7 +181,7 @@ ScriptedImporter:
       y: 4
       width: 10
       height: 16
-    spriteID: 5a63585730895f6d6a3a522a3944b5d2
+    spriteID: fb80e76c23ec99882bd83b5dfd5345bf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -207,7 +202,7 @@ ScriptedImporter:
       y: 28
       width: 10
       height: 16
-    spriteID: 38f67317624d87b0cba7bc48a29c3437
+    spriteID: af1e95dcd3e47fb8caa9662c275b6c89
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,12 +216,12 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2843611714
+      value0: 3844804032
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Goblin Left
+    name: GoblinLeft
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -239,7 +234,7 @@ ScriptedImporter:
         y: 0
         width: 10
         height: 16
-      spriteId: 3186ed27e347b83a1a3d6785f1b85c89
+      spriteId: 44a1eb547356c9927a69a452a17f6f7b
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -248,7 +243,7 @@ ScriptedImporter:
         y: 0
         width: 10
         height: 16
-      spriteId: 4e6fad9156b5801eeb57f0f03fa962bb
+      spriteId: a97bf22053fd058c6b59cd9b07be299b
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -257,7 +252,7 @@ ScriptedImporter:
         y: 0
         width: 10
         height: 16
-      spriteId: 5a63585730895f6d6a3a522a3944b5d2
+      spriteId: fb80e76c23ec99882bd83b5dfd5345bf
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -266,37 +261,13 @@ ScriptedImporter:
         y: 0
         width: 10
         height: 16
-      spriteId: 38f67317624d87b0cba7bc48a29c3437
+      spriteId: af1e95dcd3e47fb8caa9662c275b6c89
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

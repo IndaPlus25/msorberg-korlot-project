@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-guid: 46ba9b7a0b49a1f7e97ae72a7a385f1e
+guid: 0ef2c317f1e6e7c28a65739eb565bee3
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: Goblin Right_Clip
-    second: {fileID: 7400000, guid: b6defb7cfb2417265a4f3fbda183eb07, type: 2}
+  externalObjects: {}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -41,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 16
+    spritePixelsToUnits: 100
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -107,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639125569118723700
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -142,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 10
+      width: 12
       height: 16
-    spriteID: 0e6467c7dfff321c8813df8b0a955a8f
+    spriteID: bf28edfbafeffd0c4bb5ced2f263b6ad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,11 +156,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 28
-      width: 10
-      height: 16
-    spriteID: 2114a263d3c8828e1859c09b993b6bb6
+      x: 44
+      y: 4
+      width: 12
+      height: 15
+    spriteID: 3ceb9e19a2aaefeaab17481eb69fdd26
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -173,7 +168,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
+    uvTransform: {x: 44, y: 4}
   - name: Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -182,11 +177,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 22
+      x: 24
       y: 4
-      width: 10
+      width: 12
       height: 16
-    spriteID: c2d40ff0b816513a5be4e6e7a101a90a
+    spriteID: 55c4e1eb64e0ae5e0aeb5272e4d0ebaa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -194,7 +189,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 22, y: 4}
+    uvTransform: {x: 24, y: 4}
   - name: Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -203,11 +198,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 22
+      x: 4
       y: 28
-      width: 10
-      height: 16
-    spriteID: 800be8d2b059f952ba86c892087b6e95
+      width: 12
+      height: 15
+    spriteID: 8a08e86e10a33a35ba85f7957baf1f30
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -215,18 +210,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 22, y: 28}
+    uvTransform: {x: 4, y: 28}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2907568437
+      value0: 3112140615
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Goblin Right
+    name: GoblinDown
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -235,68 +230,44 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 10
+        width: 12
         height: 16
-      spriteId: 0e6467c7dfff321c8813df8b0a955a8f
+      spriteId: bf28edfbafeffd0c4bb5ced2f263b6ad
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 10
-        height: 16
-      spriteId: 2114a263d3c8828e1859c09b993b6bb6
+        width: 12
+        height: 15
+      spriteId: 3ceb9e19a2aaefeaab17481eb69fdd26
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 10
+        width: 12
         height: 16
-      spriteId: c2d40ff0b816513a5be4e6e7a101a90a
+      spriteId: 55c4e1eb64e0ae5e0aeb5272e4d0ebaa
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 10
-        height: 16
-      spriteId: 800be8d2b059f952ba86c892087b6e95
+        width: 12
+        height: 15
+      spriteId: 8a08e86e10a33a35ba85f7957baf1f30
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
