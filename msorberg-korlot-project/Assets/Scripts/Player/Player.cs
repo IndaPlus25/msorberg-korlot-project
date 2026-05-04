@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         material = gameObject.GetComponent<SpriteRenderer>().material;
-        material.SetColor("_FlashColor", Color.white);
     }
 
     public void Hurt(int damage)
@@ -40,9 +39,18 @@ public class Player : MonoBehaviour
 
     IEnumerator HurtFlash()
     {
+        material.SetColor("_FlashColor", Color.red);
         material.SetFloat("_FlashAmount", flashAmount);
         yield return new WaitForSeconds(flashTime);
-        material.SetFloat("_FlashAmount", flashAmount/4);
+        material.SetFloat("_FlashAmount", 0);
+        while(canBeAttacked == false)
+        {
+            yield return new WaitForSeconds(flashTime);
+            material.SetColor("_FlashColor", Color.white);
+            material.SetFloat("_FlashAmount", flashAmount/6);
+            yield return new WaitForSeconds(flashTime);
+            material.SetFloat("_FlashAmount", 0);
+        }
     }
 
     IEnumerator Death()
