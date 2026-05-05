@@ -4,6 +4,7 @@ public class CameraFollow : MonoBehaviour
 {
     public GameObject target;
     public float dampTime = 0.15f;
+    public float lookAhead = 0.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,8 +16,10 @@ public class CameraFollow : MonoBehaviour
     {
         Vector2 currentPos = transform.position;
         Vector2 targetPos = target.transform.position;
-        Vector3 velocity = Vector2.zero;
-        Vector3 movement = Vector3.SmoothDamp(currentPos, targetPos, ref velocity, dampTime);
+        Vector3 delta = targetPos - currentPos;
+        Vector2 velocity = Vector2.zero;
+        Vector3 movement = Vector2.SmoothDamp(currentPos, targetPos, ref velocity, dampTime);
+        movement += delta * lookAhead;
         movement.z = -10; // To zoom the camera out
         transform.position = movement;
     }
