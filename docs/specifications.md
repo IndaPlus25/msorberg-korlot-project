@@ -45,13 +45,13 @@ It will have it's own description and a version number.
 - m = milestone
 - h = hotfix
 
-Version number will be: **d.mhh**
+Version number will be: **d.m.hh**
 
-So first milestone will be version v0.100.
+So first milestone will be version v0.1.00.
 
-If it has a hotfix it will be version v0.101, to have 99 hotfixes between milestones.
+If it has a hotfix it will be version v0.1.01, to have 99 hotfixes between milestones.
 
-If the game is finally done it will be v1.000
+If the game is finally done it will be v1.0.00
 
 
 # Collaboration
