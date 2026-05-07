@@ -1,2 +1,10 @@
-# msorberg-korlot-project
-Project making a game for DD1349
+# RPG Dungeon Crawler
+A RPG Dungeon Crawler made in Unity
+
+Built by:
+* Marcus Sörberg
+* Filip Körlof
+
+## Documentation
+* [Specification](docs/specs.md)
+* [Logs](docs/logs.md)
