@@ -270,7 +270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   target: {fileID: 1181166235}
-  dampTime: 0.15
+  dampTime: 0.05
+  lookAheadDistance: 2
+  lookAheadVelocitySmoothing: 0.1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
