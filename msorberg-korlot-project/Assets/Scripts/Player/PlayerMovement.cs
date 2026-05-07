@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, ICameraLook
 {
     public float moveSpeed = 5f;
     public Vector2 lookVector = Vector2.down;
@@ -81,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         SetLook(newLookVector);
     }
 
+
     public void SetLook(Vector2 newLookVector)
     {
         if (newLookVector.magnitude == 0)
@@ -97,5 +98,10 @@ public class PlayerMovement : MonoBehaviour
         {
             bufferedLookVector = newLookVector;
         }
+    }
+
+    public Vector2 GetLookDirection()
+    {
+        return lookVector;
     }
 }
