@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public Transform player;
-    public Transform attackpoint;
+    public Transform attackPoint;
     public LayerMask playerLayer;
     private EnemyStats stats;
     private EnemyMovement movement;
